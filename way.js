@@ -9,6 +9,7 @@
 // 2-qadam package.json ni tertibga keltirish:
 // scripts bolimiga
 // "dev": "nodemon index.js"
+// "start": "node index.js"
 // "format": "prettier --ignore-uknown --write."-bu bizga faqat qodlarni format qilishuchun kerak bo'ladi   .-ta esdan chiqmasligi kerak
 
 // 3-QADAM env paket yaratish:
