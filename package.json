@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/sunnatbek1144/telegram-bot-review/issues"
   },
-  "homepage": "https://github.com/sunnatbek1144/telegram-bot-review#readme"
+  "homepage": "https://github.com/sunnatbek1144/telegram-bot-review#readme",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.67.0"
+  }
 }
