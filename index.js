@@ -15,6 +15,29 @@ const bot = new TelegramBot(TOKEN, { polling: true })
 bot.onText(/\/start/, message => {
 	bot.sendMessage(
 		message.chat.id,
-		`assolomu aleykum ${message.from.first_name} qori aka boling`,
+		`assolomu aleykum ${message.from.first_name} aka , Iltimos pastdagi tugmalardan birini tanlang 😎 `,
+		{
+			reply_markup: {
+				inline_keyboard: [
+					[
+						{ text: 'Google', url: 'https://google.com' },
+						{ text: 'YouTube', url: 'https://youtube.com' },
+						{ text: 'Ma`lumot uchun', callback_data: 'data' },
+					],
+				],
+			},
+		},
 	)
+})
+
+// CAllback query
+bot.on('callback_query', query => {
+	const chatId = query.message.chat.id
+	const first_name = query.message.chat.first_name
+	if (query.data === 'data') {
+		bot.sendMessage(
+			chatId,
+			`UShbu botning egasi ${first_name}ga salom aytdi 😁`,
+		)
+	}
 })

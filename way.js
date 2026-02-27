@@ -15,3 +15,11 @@
 // 3-QADAM env paket yaratish:
 // .env - bu senga malumotlarni git hubga yubrmaslik uchun kerak masalan tokenni
 // .env.example - bu esa sen agarda birga dosting bilan ishlayootganingda envdagi TOKEN unga korinmaydi shuning uchun TOKEN= yani envda nimalar borligini bilish uchun
+
+// bu sizga bot uchun kerak va bot sizni ismingizni aytip assolomu laeykum deysdi
+// bot.onText(/\/start/, message =>
+// bot.sendMessage(
+// 		message.chat.id,
+// 		`assolomu aleykum ${message.from.first_name} qori aka boling`,
+// 	)
+// })
