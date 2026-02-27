@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/sunnatbek1144/telegram-bot-review#readme",
   "dependencies": {
-    "node-telegram-bot-api": "^0.67.0"
+    "node-telegram-bot-api": "^0.67.0",
+    "nodemon": "^3.1.14"
   }
 }
