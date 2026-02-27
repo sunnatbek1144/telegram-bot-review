@@ -1,25 +1,27 @@
 {
-  "name": "telegram-bot",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sunnatbek1144/telegram-bot-review.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sunnatbek1144/telegram-bot-review/issues"
-  },
-  "homepage": "https://github.com/sunnatbek1144/telegram-bot-review#readme",
-  "dependencies": {
-    "dotenv": "^17.3.1",
-    "node-telegram-bot-api": "^0.67.0",
-    "nodemon": "^3.1.14"
-  }
+	"name": "telegram-bot",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "nodemon index.js",
+		"format": "prettier --ignore-uknown --write."
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sunnatbek1144/telegram-bot-review.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/sunnatbek1144/telegram-bot-review/issues"
+	},
+	"homepage": "https://github.com/sunnatbek1144/telegram-bot-review#readme",
+	"dependencies": {
+		"dotenv": "^17.3.1",
+		"node-telegram-bot-api": "^0.67.0",
+		"nodemon": "^3.1.14",
+		"prettier": "^3.8.1"
+	}
 }
