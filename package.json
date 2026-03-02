@@ -2,11 +2,11 @@
 	"name": "telegram-bot",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
+	"main": "dars-4.js",
 	"type": "module",
 	"scripts": {
-		"start": "node index.js",
-		"dev": "nodemon index.js",
+		"start": "node dars-4.js",
+		"dev": "nodemon dars-4.js",
 		"format": "prettier --ignore-uknown --write."
 	},
 	"repository": {
@@ -21,6 +21,7 @@
 	},
 	"homepage": "https://github.com/sunnatbek1144/telegram-bot-review#readme",
 	"dependencies": {
+		"axios": "^1.13.6",
 		"dotenv": "^17.3.1",
 		"node-telegram-bot-api": "^0.67.0",
 		"nodemon": "^3.1.14",
