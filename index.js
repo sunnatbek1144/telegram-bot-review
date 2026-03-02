@@ -22,8 +22,9 @@ bot.onText(/\/start/, message => {
 					[
 						{ text: 'Google', url: 'https://google.com' },
 						{ text: 'YouTube', url: 'https://youtube.com' },
-						{ text: 'Ma`lumot uchun', callback_data: 'data' },
 					],
+					[{ text: 'Ma`lumot uchun', callback_data: 'data' }],
+					[{ text: 'Test uchun alert chiqadi', callback_data: 'test' }],
 				],
 			},
 		},
@@ -39,5 +40,22 @@ bot.on('callback_query', query => {
 			chatId,
 			`UShbu botning egasi ${first_name}ga salom aytdi 😁`,
 		)
+	} else if (query.data === 'error') {
+		bot.answerCallbackQuery(queryid, {
+			test: 'Bu tugma xozircha ishlamaydi iltimos boshka tugmani bosing!',
+			show_alert: true,
+		})
+	} else {
+		bot
+			.answerCallbackQuery(query.id, {
+				text: `${first_name} Siz test tugmasini bosdingiz 😁`,
+				show_alert: true,
+			})
+			.then(() => {
+				bot.sendMessage(chatId, `${first_name} Iltimos boshka tugma tanlang!`)
+			})
+			.catch(error => {
+				console.log(error)
+			})
 	}
 })
